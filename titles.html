@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manga Detail - Wonderhoy</title>
+    <link rel="stylesheet" href="css/titles.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <a href="index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i>
+            Kembali ke Beranda
+        </a>
+
+        <!-- Manga Header Section -->
+        <div class="manga-header">
+            <div class="cover-container">
+                <img id="mangaCover" class="manga-cover" alt="Cover Manga">
+            </div>
+            
+            <div class="manga-info">
+                <h1 class="manga-title" id="title">Yuru CampAnthology Comic</h1>
+                
+                <div class="info-grid">
+                    <div class="info-label">Pengarang:</div>
+                    <div class="info-value" id="author">Afro</div>
+                    
+                    <div class="info-label">Ilustrator:</div>
+                    <div class="info-value" id="illustrator">Various Artists</div>
+                    
+                    <div class="info-label">Tema:</div>
+                    <div class="info-value" id="theme">Camping, Slice of Life</div>
+                    
+                    <div class="info-label">Jenis:</div>
+                    <div class="info-value" id="type">Manga</div>
+                    
+                    <div class="info-label">Status:</div>
+                    <div class="info-value" id="status">End</div>
+                    
+                    <div class="info-label">Official:</div>
+                    <div class="info-value">
+                        <a id="official" target="_blank">Lihat</a>
+                    </div>
+                </div>
+
+                <!-- Genre section dipindahkan ke sini -->
+                <div class="genre-section">
+                    <div class="genre-label">Genre:</div>
+                    <div id="genreList" class="genre-container">
+                        <!-- Genre akan diisi oleh JavaScript -->
+                    </div>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div class="btn-row">
+                    <button id="readButton" class="btn-primary">Baca Sekarang</button>
+                    <button class="btn-secondary">Bookmark</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sinopsis -->
+        <div class="content-section">
+            <h2 class="section-title">Sinopsis</h2>
+            <p id="synopsis" class="synopsis-text">
+                Sekelompok gadis menikmati kegiatan camping santai di berbagai tempat indah di Jepang. 
+                Cerita ringan, hangat, dan penuh momen komedi.
+            </p>
+        </div>
+
+        <!-- Chapter List -->
+        <div class="content-section">
+            <h2 class="section-title">Daftar Chapter</h2>
+            <div id="chapterList" class="chapter-list">
+                <!-- Chapter list akan diisi oleh JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Font Awesome untuk icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="java/titles.js"></script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonderhoy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/wonderhoy.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <button class="hamburger-btn" id="hamburgerBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo">
+                <i class="fas fa-book-open"></i>
+                Wonderhoy
+            </div>
+            <div class="profile-menu">
+                <div id="profileIcon" class="profile-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div id="profilePopup" class="profile-popup">
+                    <div class="profile-header">
+                        <i class="fas fa-user-circle"></i>
+                        <p>Guest</p>
+                    </div>
+                    <a href="login.html" class="popup-btn">Sign In</a>
+                    <a href="register.html" class="popup-btn">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2 class="sidebar-title">Menu</h2>
+            <button class="sidebar-close" id="sidebarClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="sidebar-menu">
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link active">
+                    <i class="fas fa-home"></i>
+                    Home
+                </a>
+            </li>
+            
+            <li class="sidebar-item has-dropdown">
+                <a href="#" class="sidebar-link">
+                    <i class="fas fa-book"></i>
+                    Titles
+                </a>
+                <ul class="sidebar-dropdown">
+                    <li class="dropdown-item">
+                        <a href="#" class="dropdown-link">
+                            <i class="fas fa-search"></i>
+                            Advanced Search
+                        </a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#" class="dropdown-link">
+                            <i class="fas fa-plus"></i>
+                            Recently Added
+                        </a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#" class="dropdown-link">
+                            <i class="fas fa-sync"></i>
+                            Latest Updates
+                        </a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#" class="dropdown-link">
+                            <i class="fas fa-random"></i>
+                            Random
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                    <i class="fas fa-th-large"></i>
+                    Genre
+                </a>
+            </li>
+            
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                    <i class="fas fa-fire"></i>
+                    Trending
+                </a>
+            </li>
+            
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                    <i class="fas fa-bookmark"></i>
+                    Bookmark
+                </a>
+            </li>
+            
+            <li class="sidebar-item has-dropdown">
+                <a href="#" class="sidebar-link">
+                    <i class="fas fa-users"></i>
+                    Community
+                </a>
+                <ul class="sidebar-dropdown">
+                    <li class="dropdown-item">
+                        <a href="#" class="dropdown-link">
+                            <i class="fas fa-comments"></i>
+                            Forums
+                        </a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#" class="dropdown-link">
+                            <i class="fas fa-users"></i>
+                            Groups
+                        </a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#" class="dropdown-link">
+                            <i class="fas fa-user"></i>
+                            Users
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li class="sidebar-item has-dropdown">
+                <a href="#" class="sidebar-link">
+                    <i class="fas fa-info-circle"></i>
+                    MangaDex
+                </a>
+                <ul class="sidebar-dropdown">
+                    <li class="dropdown-item">
+                        <a href="#" class="dropdown-link">
+                            <i class="fas fa-file-alt"></i>
+                            Community Guidelines
+                        </a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#" class="dropdown-link">
+                            <i class="fas fa-bullhorn"></i>
+                            Announcements
+                        </a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#" class="dropdown-link">
+                            <i class="fas fa-address-card"></i>
+                            About Us
+                        </a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#" class="dropdown-link">
+                            <i class="fas fa-envelope"></i>
+                            Contact
+                        </a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#" class="dropdown-link">
+                            <i class="fas fa-ad"></i>
+                            Advertise
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            
+            <div class="sidebar-divider"></div>
+            
+            <li class="sidebar-item">
+                <a href="login.html" class="sidebar-link">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Sign In
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="register.html" class="sidebar-link">
+                    <i class="fas fa-user-plus"></i>
+                    Register
+                </a>
+            </li>
+        </ul>
+        <div class="sidebar-footer">
+            <h3 class="sidebar-footer-title">Follow Us</h3>
+            <div class="sidebar-social">
+                <a href="#" class="sidebar-social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="sidebar-social-link">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" class="sidebar-social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="sidebar-social-link">
+                    <i class="fab fa-discord"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Main Content -->
+    <div class="homepage" id="homepage">
+        <!-- Popular Manga Section -->
+        <section class="manga-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-fire"></i>
+                    Manga Populer
+                </h2>
+                <a href="#" class="view-all">
+                    Lihat Semua
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="manga-grid" id="popularManga">
+                <!-- Manga cards will be generated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Latest Updates Section -->
+        <section class="manga-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-clock"></i>
+                    Update Terbaru
+                </h2>
+                <a href="#" class="view-all">
+                    Lihat Semua
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="manga-grid" id="latestManga">
+                <!-- Manga cards will be generated by JavaScript -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Berhasil ditambahkan ke bookmark!</span>
+    </div>
+
+    <script src="java/wonderhoy.js"></script>
+</body>
+</html>

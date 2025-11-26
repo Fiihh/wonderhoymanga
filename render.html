@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonderhoy Reader</title>
+
+    <link rel="stylesheet" href="css/reader.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="reader-header">
+        <div class="reader-title" id="readerTitle">Loading...</div>
+        
+        <div class="reader-buttons">
+            <button onclick="toggleTheme()"><i class="fas fa-moon"></i></button>
+            <button onclick="toggleFullscreen()"><i class="fas fa-expand"></i></button>
+            <a href="index.html"><button><i class="fas fa-times"></i></button></a>
+        </div>
+    </header>
+
+    <!-- Chapter Navigation -->
+    <div class="chapter-nav">
+        <button id="prevChapter" onclick="prevChapter()">◀ Chapter</button>
+        <select id="chapterSelector" onchange="changeChapter()"></select>
+        <button id="nextChapter" onclick="nextChapter()">Chapter ▶</button>
+    </div>
+
+    <!-- Main Reader -->
+    <main class="reader-main">
+        <img id="pageImage" class="reader-image" src="" onclick="toggleZoom()">
+    </main>
+
+    <!-- Page Nav -->
+    <div class="page-nav">
+        <button onclick="prevPage()">◀</button>
+        <span id="pageIndicator">1 / 1</span>
+        <button onclick="nextPage()">▶</button>
+    </div>
+
+    <script src="java/reader.js"></script>
+</body>
+</html>
